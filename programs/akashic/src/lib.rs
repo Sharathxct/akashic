@@ -23,8 +23,12 @@ pub mod akashic {
         instructions::Long::handle(ctx, amount)
     }
 
-    pub fn short(ctx: Context<Short>, amount: u64) -> Result<()> {
-        instructions::Short::handle(ctx, amount)
+    pub fn buy_short(ctx: Context<BuyShort>, amount: u64) -> Result<()> {
+        instructions::BuyShort::handle(ctx, amount)
+    }
+
+    pub fn sell_short(ctx: Context<SellShort>, amount: u64) -> Result<()> {
+        instructions::SellShort::handle(ctx, amount)
     }
 
     pub fn submit_result(ctx: Context<SubmitResult>, result: VowResult) -> Result<()> {
@@ -33,5 +37,9 @@ pub mod akashic {
 
     pub fn claim(ctx: Context<Claim>) -> Result<()> {
         instructions::Claim::handle(ctx)
+    }
+
+    pub fn admin_init(ctx: Context<AdminInit>, fee: u64) -> Result<()> {
+        instructions::AdminInit::handle(ctx, fee)
     }
 }
