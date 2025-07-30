@@ -1,0 +1,3 @@
+Deploying cluster: https://api.devnet.solana.com
+Program Id: 9vG7KanpABHZX2dGPKQ31E3PZWS7qiev1AVXYQsT3V6n
+Signature: 4k6tnyiP9JDf3c4fx5aMWiaZMiJ4wFmEzrMk9MP8YJgDXeoymweV7sniPfRsTUxv3sDbNpx9SgybEmwjj8UwYkvc
