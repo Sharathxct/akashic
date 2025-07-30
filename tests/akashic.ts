@@ -184,7 +184,7 @@ describe("akashic", () => {
       const initialVaultShortBalance = await provider.connection.getTokenAccountBalance(vaultShortAta);
       
       const tx = await program.methods
-        .short(amount)
+        .buyShort(amount)
         .accounts({
           user: user1.publicKey,
           vow: vowPda,
@@ -320,7 +320,7 @@ describe("akashic", () => {
       const bettorShortAta = getAssociatedTokenAddressSync(demoShortMintPda, bettor.publicKey);
       
       await program.methods
-        .short(shortAmount)
+        .buyShort(shortAmount)
         .accounts({
           user: bettor.publicKey,
           vow: demoVowPda,

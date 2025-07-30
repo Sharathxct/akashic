@@ -12,7 +12,7 @@ akashic = "BUMwdXP7tr6NTEP6GmbBxozW82GSweNzGUYJyGuqSbrN"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
